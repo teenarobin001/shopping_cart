@@ -1,8 +1,10 @@
 {
+  "homepage": "http://teenarobin001.github.io/shopping_cart",
   "name": "my-shopping-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-tailwind/react": "^1.4.2",
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -10,11 +12,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }
