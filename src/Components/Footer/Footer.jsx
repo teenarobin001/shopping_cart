@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex items-center justify-around p-4 bg-black "> 
           <div>
             <p className="text-white text-sm font-inter no-underline normal-case">
-              Copyright {year} page by Marko Web
+              Copyright {year} page by store
             </p>
           </div>
         </div>
